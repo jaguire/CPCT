@@ -2,141 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Beloved Hymns Stories - CPCT</title>
-    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:700|Roboto:700" rel="stylesheet">
+    <title>CPCT</title>
     <style>
-        html {
-            font-family: 'Old Standard TT', serif;
-            font-size: 160%;
-        }
-        body {
-            margin: 0;
-        }
-
-        .table {
-            background: #fff url(kirtland-temple.jpg) no-repeat;
-            background-blend-mode: luminosity;
-            background-size: cover;
-        }
-        .row {
-            display: table-row;
-        }
-        .cell {
-            display: table-cell;
-            position: relative;
-            z-index: 1;
-        }
-        .cell__top {
-            border-bottom: 1rem solid rgba(255, 51, 0, .85);
-        }
-        .cell__left {
-            border-right: 1rem solid rgba(255, 51, 0, .85);
-            width: 15rem;
-        }
-        .cell__bottom {
-        }
-        .cell__right {
-            text-align: center;
-            width: 85%;
-        }
-
-        .transparent {
+        #logo {
+            margin: auto;
             position: absolute;
-            background-color: #fb8;
-            opacity: .85;
-            top: 0; left: 0; right: 0; bottom: 0;
-            z-index: -1;
-        }
-        .red {
-            background-color: #fb8;
-        }
-        .yellow {
-            background-color: #fc4;
-        }
-
-        .small {
-            font-size: 70%;
-        }
-        .large {
-            font-size: 150%;
-        }
-        .huge {
-            font-size: 250%;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
-        }
-        .caps {
-            text-transform: uppercase;
-        }
-        .sans {
-            font-family: 'Roboto', sans-serif;
-        }
-        .gray {
-            color: #666;
-        }
-
-        .logo {
-            text-align: center;
-            padding: 2rem;
+            top: 0; left: 0; bottom: 0; right: 0;
+            width: 697px; height: 448px;
         }
     </style>
 </head>
 <body>
-    <div class="table">
-        <div class="row">
-            <div class="cell cell__top cell__left cell--yellow">
-                <div class="transparent yellow"></div>
-            </div>
-            <div class="cell cell__top cell__right">
-                <div class="transparent red"></div>
-
-                <div class="small">&nbsp;</div>
-                <div class="sans gray">Center Place Christian Theatre</div>
-                <div class="sans gray small">proudly presents</div>
-                <div class="small">&nbsp;</div>
-                
-                <div class="huge caps">Beloved</div>
-                <div class="huge caps">Hymns</div>
-                <div class="huge caps">Stories</div>
-                
-                <div class="small">&nbsp;</div>
-                <div class="small">vignettes about the people who authored the hymns and why</div>
-                <div class="small">&nbsp;</div>
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell cell__bottom cell__left">
-                <div class="transparent red"></div>
-            </div>
-            <div class="cell cell__bottom cell__right">
-                <div class="transparent yellow"></div>
-
-                <div class="small">&nbsp;</div>
-                <div class="sans small">Come to enjoy vignettes that reveal the history of our beloved hymns and</div>
-                <div class="sans small">to be inspired by authors who responded to the Lord's Spirit to write them.</div>
-                <div>&nbsp;</div>
-
-                <div class="large">Saturday, April 29, 2017</div>
-                <div class="large">7pm</div>
-                <div>at</div>
-                <div>Blue Springs Remnant Church of Jesus Christ</div>
-                <div>5555 Valley View Road</div>
-                <div>Blue Springs, Missouri</div>
-                <div>&nbsp;</div>
-
-                <div class="caps gray">Donations only event</div>
-                <div class="gray">Proceeds benefit CPCT's productions of</div>
-                <div class="gray">Mary Poppins</div>
-                <div class="gray">August 11 &amp; 12, 2017</div>
-                <div>&nbsp;</div>
-                <div>&nbsp;</div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="logo">
-        <img src="logo.png" alt="Center Place Christian Theatre">
-    </div>
+    <img id="logo" src="logo.png">
 </body>
 </html>
