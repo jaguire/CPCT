@@ -1,12 +1,9 @@
-node_modules/
 packages/
-tools/
 temp/
 tmp/
-project.lock.json
-*.bak
-~$*
-*~
 Desktop.ini
 Thumbs.db
 .DS_Store
+*.bak
+~$*
+*~
