@@ -3,7 +3,7 @@ layout: layout
 title: Mary Poppins
 ---
 
-{% include breadcrumb.html %}
+{% include breadcrumb.html jared="this is a test" %}
 <!-- Main Start -->
 <div id="main">
     <div class="container">
@@ -14,31 +14,32 @@ title: Mary Poppins
                     <div class="row">
                         <div class="col-md-12">
                             <div class="px-media">
-                                <figure> <img src="/assets/extra-images/grall-img-9.jpg" alt="performer" /> </figure>
+                                <figure><img src="cover.jpg" alt="" /></figure>
                             </div>
                             <div class="content">
                                 <div class="heading">
                                     <ul>
-                                        <li><a href="#." class="music-mixer">Live Performance</a></li>
+                                        <li><a class="music-mixer">Live Performance</a></li>
                                     </ul>
                                     <h4>{{page.title}}</h4>
                                 </div>
                                 <div class="function-time">
-                                    <p><span>Date: <em>Saturday, June 24th, 2017</em></span></p>
-                                    <p><span>Doors Open <em>2:00</em> <b>PM</b></span><span>Show Start <em>3:00</em> <b>PM</b></span></p>
+                                    <div>Friday, August 11th</div>
+                                    <p><b>7:00 PM</b></p>
+                                    <div>Saturday, August 12th</div>
+                                    <p><b>2:00 PM</b><b>7:00 PM</b></p>
                                 </div>
                                 <div class="ticket-info">
-                                    <div class="ticket-price">
+                                    <!--<div class="ticket-price">
                                         <h6>Tickets</h6>
                                         <p><span>$</span>00</p>
-                                    </div>
+                                    </div>-->
                                     <div class="description">
                                         <address>
-                                        Living Hope Restoration Branch<br>
-                                        2425 S CRYSLER AVE<br>
-                                        INDEPENDENCE, MO 64052
+                                        <b>Living Hope Restoration Branch</b><br>
+                                        2425 S CRYSLER AVE, INDEPENDENCE
                                         </address>
-                                        <div class="view-map"><a href="https://goo.gl/maps/DjjVk6ZMrHm" target="_blank">View Map</a> </div>
+                                        <div class="view-map"><a href="https://goo.gl/maps/DjjVk6ZMrHm" target="_blank">View Map</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -59,8 +60,9 @@ title: Mary Poppins
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="false">Description</a></li>
-                            <li role="presentation" class=""><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="false">Ticket Information</a></li>
-                            <li role="presentation" class=""><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab" aria-expanded="false">Event Perfomers</a></li>
+                            <li role="presentation" class=""><a href="#fundraiser" aria-controls="fundraiser" role="tab" data-toggle="tab" aria-expanded="false">Fundraiser</a></li>
+                            <!--<li role="presentation" class=""><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="false">Ticket Information</a></li>
+                            <li role="presentation" class=""><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab" aria-expanded="false">Event Perfomers</a></li>-->
                         </ul>
                         
                         <!-- Tab panes -->
@@ -68,7 +70,26 @@ title: Mary Poppins
                             <div role="tabpanel" class="tab-pane active" id="home">
                                 <p>When Jane and Michael, the children of the wealthy and uptight Banks family, are faced with the prospect of a new nanny, they are pleasantly surprised by the arrival of the magical Mary Poppins. Embarking on a series of fantastical adventures with Mary and her Cockney performer friend, Bert, the siblings try to pass on some of their nanny's sunny attitude to their preoccupied parents.</p>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="profile">
+                            <div role="tabpanel" class="tab-pane" id="fundraiser">
+                                <h2>A Practically Perfect British Tea</h2>
+                                <h4>$15.00 per person</h4>
+                                <p><b>Silent Auction items available: beautiful tea pots & 3 tiered dessert trays!</b></p>
+                                <p>All ages welcome - Guys & Gals, Mothers & Kids, Grandmas & Grandkids, or a Girl’s Day Out!<br>
+                                    Delicious Treats & Tea (or Lemonade). Scones with lemon curd and cream, petit fours, cupcakes,
+                                    cookies & tea sandwiches (cucumber & chicken salad)<br>
+                                    Fun Activities: Name that Tune, Photo-Ops, Chalk Drawing</p>
+                                <h6>WHEN</h6>
+                                <p>Saturday, June 24th<br>
+                                    from 3:00 PM to 5:00 PM</p>
+                                <h6>WHERE</h6>
+                                <p>Atherton Restoration Branch<br>
+                                    4910 N MAIN, INDEPENDENCE</p>
+                                <p><b>HURRY & reserve your seat on our FB page. Only 150 seats available!</b></p>
+                                <div class="ticket-info">
+                                    <div class="view-map"><a href="https://www.facebook.com/events/132809090626260" target="_blank">Reserve a Seat</a></div>
+                                </div>
+                            </div>
+                            <!--<div role="tabpanel" class="tab-pane" id="profile">
                                 <section class="px-price price-box schedule">
                                     <div class="table-responsive">
                                         <table class="table">
@@ -155,11 +176,12 @@ title: Mary Poppins
                                         </article>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </section>
-                <section class="px-team">
+
+                <!--<section class="px-team">
                     <div class="px-section-title">
                         <h3>Production Schedule</h3>
                     </div>
@@ -197,8 +219,9 @@ title: Mary Poppins
                             </ul>
                         </div>
                     </div>
-                </section>
-                <section class="px-gallry classic">
+                </section>-->
+
+                <!--<section class="px-gallry classic">
                     <div class="row">
                         <div class="px-section-title col-md-12">
                             <h3>Post Event Gallery</h3>
@@ -270,7 +293,7 @@ title: Mary Poppins
                             </div>
                         </article>
                     </div>
-                </section>
+                </section>-->
 <!--
                  <section class="px-blog share">
                     <div class="row">
@@ -291,84 +314,79 @@ title: Mary Poppins
             <!--end page content-->
             <!--sidebar-->
             <aside class="col-md-3">
-                <div class="widget widget_advertisement">
-                    <figure><img alt="" src="/assets/extra-images/ad-img.png"></figure>
+                <div class="widget">
+                    <div class="widget-section-title"><h2>Tea Party</h2></div>
+                    <div>Saturday, June 24th</div>
+                    <div>from 3:00 PM to 5:00 PM</div>
+                    <div class="ticket-info" style="margin:10px 0 0 -3px">
+                        <div class="view-map"><a href="https://www.facebook.com/events/132809090626260" target="_blank">More Info</a></div>
+                    </div>
                 </div>
                 <div class="widget widget_albums">
                     <div class="widget-section-title"><h2>Cast</h2></div>
                     <ul>
                         <li>
-                            <figure><a href="#"><img alt="" src="/assets/extra-images/album-img1.jpg"></a></figure>
                             <div class="px-text">
                                 <span>Mary Poppins</span>
-                                <h6><a href="#">Madelyn Clark</a></h6>
-                                <a class="buy-album" href="#"><i class="icon-star"></i>Bio</a>
+                                <h6>Madelyn Clark</h6>
                             </div>
                         </li>
                         <li>
-                            <figure><a href="#"><img alt="" src="/assets/extra-images/album-img1.jpg"></a></figure>
                             <div class="px-text">
                                 <span>Bert</span>
-                                <h6><a href="#">Matt Emerick</a></h6>
-                                <a class="buy-album" href="#"><i class="icon-star"></i>Bio</a>
+                                <h6>Matt Emerick</h6>
                             </div>
                         </li>
                         <li>
-                            <figure><a href="#"><img alt="" src="/assets/extra-images/album-img1.jpg"></a></figure>
                             <div class="px-text">
                                 <span>George Banks</span>
-                                <h6><a href="#">Austin Reed</a></h6>
-                                <a class="buy-album" href="#"><i class="icon-star"></i>Bio</a>
+                                <h6>Austin Reed</h6>
                             </div>
                         </li>
                         <li>
-                            <figure><a href="#"><img alt="" src="/assets/extra-images/album-img1.jpg"></a></figure>
                             <div class="px-text">
                                 <span>Winifred Banks</span>
-                                <h6><a href="#">Erica Jobe</a></h6>
-                                <a class="buy-album" href="#"><i class="icon-star"></i>Bio</a>
+                                <h6>Erica Jobe</h6>
                             </div>
                         </li>
                         <li>
-                            <figure><a href="#"><img alt="" src="/assets/extra-images/album-img1.jpg"></a></figure>
                             <div class="px-text">
                                 <span>Jane Banks</span>
-                                <h6><a href="#">Naomi Alaniz</a></h6>
-                                <a class="buy-album" href="#"><i class="icon-star"></i>Bio</a>
+                                <h6>Naomi Alaniz</h6>
                             </div>
                         </li>
                         <li>
-                            <figure><a href="#"><img alt="" src="/assets/extra-images/album-img1.jpg"></a></figure>
                             <div class="px-text">
                                 <span>Michael Banks</span>
-                                <h6><a href="#">Noah Alaniz</a></h6>
-                                <a class="buy-album" href="#"><i class="icon-star"></i>Bio</a>
+                                <h6>Noah Alaniz</h6>
                             </div>
                         </li>
                         <li>
-                            <figure><a href="#"><img alt="" src="/assets/extra-images/album-img1.jpg"></a></figure>
                             <div class="px-text">
                                 <span>Miss Andrews</span>
-                                <h6><a href="#">Emily Cain</a></h6>
-                                <a class="buy-album" href="#"><i class="icon-star"></i>Bio</a>
+                                <h6>Emily Cain</h6>
                             </div>
                         </li>
                         <li>
-                            <figure><a href="#"><img alt="" src="/assets/extra-images/album-img1.jpg"></a></figure>
                             <div class="px-text">
                                 <span>Mrs. Brill</span>
-                                <h6><a href="#">Shayna Roush</a></h6>
-                                <a class="buy-album" href="#"><i class="icon-star"></i>Bio</a>
+                                <h6>Shayna Roush</h6>
                             </div>
                         </li>
                         <li>
-                            <figure><a href="#"><img alt="" src="/assets/extra-images/album-img1.jpg"></a></figure>
                             <div class="px-text">
                                 <span>Robertson Ay</span>
-                                <h6><a href="#">Joey Carrillo</a></h6>
-                                <a class="buy-album" href="#"><i class="icon-star"></i>Bio</a>
+                                <h6>Joey Carrillo</h6>
                             </div>
                         </li>
+                        <!--<li>
+                            <figure><a href="#"><img alt="" src="//via.placeholder.com/70"></a></figure>
+                            <div class="px-text">
+                                <span>ROLE</span>
+                                <h6><a href="#">NAME</a></h6>
+                                <a class="buy-album" href="#"><i class="icon-star"></i>Bio</a>
+                            </div>
+                        </li>-->
                     </ul>
                 </div>
             </aside>
