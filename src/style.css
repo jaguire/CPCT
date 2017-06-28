@@ -1128,7 +1128,6 @@ address {font-style: italic;}
 /* Share Icon style end */
 /* Banner style start */
 .px-banner {
-    margin-bottom: 40px;
     overflow: hidden;
  }
  
@@ -1158,7 +1157,7 @@ address {font-style: italic;}
  
         .banner-holder ul li .caption {
             color: #fff;
-            left: 50%;
+            left: 55%;
             margin-left: -531px;
             padding: 9px 0 0 0;
             position: absolute;
@@ -1183,12 +1182,11 @@ address {font-style: italic;}
                 font-weight: bold;
                 line-height: 59px;
                 margin: 0 0 31px 0;
-                padding: 34px 0 0;
                 position: relative;
                 text-transform: uppercase;
              }
  
-                .banner-holder ul li .caption h2:after {
+                /*.banner-holder ul li .caption h2:after {
                     background: url(assets/images/block-line.png) no-repeat left top;
                     content: '';
                     height: 14px;
@@ -1196,7 +1194,7 @@ address {font-style: italic;}
                     position: absolute;
                     top: 0;
                     width: 107px;
-                 }
+                 }*/
  .loader {
     height: 50px;
     left: 50%;
@@ -1317,7 +1315,7 @@ address {font-style: italic;}
 /* Counter style start */
 .counter-bg {
     background-attachment: fixed;
-    background-image: url(/events/mary-poppins-2017/chimney.gif);
+    background-image: url(/events/marypoppins2017/chimney.gif);
     background-size: cover;
  }
  
@@ -2864,7 +2862,6 @@ ul.px-partners li a {
             font-family: 'Hind', sans-serif;
             font-size: 14px;
             font-weight: 400;
-            margin-bottom: 21px;
          }
  
         .px-team .content .text blockquote {
@@ -2884,12 +2881,16 @@ ul.px-partners li a {
             padding: 22px 0;
          }
  
-        .px-team .content .text .socail_media li , .px-construction .socail_media li {
+        .social_media {
+            float: right;
+        }
+
+        .social_media li, .px-construction .social_media li {
             float: left;
             list-style: none;
          }
  
-        .px-team .content .text .socail_media li a , .px-construction .socail_media li a {
+        .social_media li a, .px-construction .social_media li a {
             color: #fff;
             display: block;
             font-size: 26px;
@@ -2899,19 +2900,19 @@ ul.px-partners li a {
             width: 51px;
          }
  
-        .px-team .content .text .socail_media , .px-construction .socail_media {margin-bottom: 43px;}
+        .social_media li a[data-original-title="Email"] , .px-construction .social_media li a[data-original-title="Email"] {background: #c2c2c2;}
+
+        .social_media li a[data-original-title="Facebook"] , .px-construction .social_media li a[data-original-title="Facebook"] {background: #2d61b5;}
  
-        .px-team .content .text  .socail_media li a[data-original-title="Facebook"] , .px-construction .socail_media li a[data-original-title="Facebook"] {background: #2d61b5;}
+        .social_media li a[data-original-title="twitter"] , .px-construction .social_media li a[data-original-title="twitter"] {background: #53a7ff;}
  
-        .px-team .content .text .socail_media li a[data-original-title="twitter"] , .px-construction .socail_media li a[data-original-title="twitter"] {background: #53a7ff;}
+        .social_media li a[data-original-title="apple"] , .px-construction .social_media li a[data-original-title="apple"] {background: #c2c2c2;}
  
-        .px-team .content .text  .socail_media li a[data-original-title="apple"] , .px-construction .socail_media li a[data-original-title="apple"] {background: #c2c2c2;}
+        .social_media li a[data-original-title="soundclouds"] , .px-construction .social_media li a[data-original-title="soundclouds"] {background: #ff6c00;}
  
-        .px-team .content .text  .socail_media li a[data-original-title="soundclouds"] , .px-construction .socail_media li a[data-original-title="soundclouds"] {background: #ff6c00;}
+        .social_media li a[data-original-title="dribbble"] , .px-construction .social_media li a[data-original-title="dribbble"] {background: #51c214;}
  
-        .px-team .content .text  .socail_media li a[data-original-title="dribbble"] , .px-construction .socail_media li a[data-original-title="dribbble"] {background: #51c214;}
- 
-        .px-team .content .text ul.socail_media:after , .px-blog.share .heading:after {
+        ul.social_media:after , .px-blog.share .heading:after {
             clear: both;
             content: '';
             display: block;
@@ -2920,6 +2921,7 @@ ul.px-partners li a {
         .px-team .content .px-experience {
             background: #f3f3f3;
             border-radius: 5px;
+            margin-bottom: 50px;
             padding: 30px 41px 40px 25px;
          }
  
@@ -3693,7 +3695,7 @@ width: 100%; {}
  
     .px-blog.share li a {font-size: 20px;}
  
-.px-blog.share .socail_media {
+.px-blog.share .social_media {
     background-color: #fff;
     float: right;
     margin-top: -15px;
@@ -3706,7 +3708,7 @@ width: 100%; {}
     padding-right: 15px;
  }
  
-.px-blog.share ul.socail_media:after {
+.px-blog.share ul.social_media:after {
     background-color: #e6e6e6;
     content: '';
     height: 1px;
@@ -3717,15 +3719,15 @@ width: 100%; {}
     z-index: -1;
  }
  
-.px-blog.share  .socail_media li a[data-original-title="Facebook"] {color: #23609f}
+.px-blog.share  .social_media li a[data-original-title="Facebook"] {color: #23609f}
  
-.px-blog.share .socail_media li a[data-original-title="twitter"] {color: #2ec5eb;}
+.px-blog.share .social_media li a[data-original-title="twitter"] {color: #2ec5eb;}
  
-.px-blog.share .socail_media li a[data-original-title="instagram"] {color: #267cd5;}
+.px-blog.share .social_media li a[data-original-title="instagram"] {color: #267cd5;}
  
-.px-blog.share .socail_media li a[data-original-title="soundclouds"] {color: #ff6c00;}
+.px-blog.share .social_media li a[data-original-title="soundclouds"] {color: #ff6c00;}
  
-.px-blog.share .socail_media li a[data-original-title="plus"] {color: #ca2020;}
+.px-blog.share .social_media li a[data-original-title="plus"] {color: #ca2020;}
  
 .share-blog .px-media {
     float: left;
