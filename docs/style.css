@@ -4425,8 +4425,6 @@ width: 100%; {}
  
 .px-price.schedule  table tbody {background-color: #f5f5f5;}
  
-.px-price.schedule .table-responsive {margin-bottom: 36px;}
- 
 .px-price.schedule .table > tbody > tr > th p {
     color: #999;
     font-size: 12px;
@@ -4920,9 +4918,9 @@ width: 100%; {}
  
     .ticket-info .description {overflow: hidden;}
  
-    .ticket-info .view-map a {
+    .ticket-info .view-map a,
+    .button a {
         background-color: #ffc600;
-        border-radius: 50px;
         color: #fff;
         font-size: 14px;
         font-weight: 500;

@@ -10,6 +10,15 @@
 	margin: 0 0 15px 0;
 }
 .widget{margin-bottom: 30px;}
+.widget .button a {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    letter-spacing: 5px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
 .widget ul{margin-bottom: 0px;}
 .widget ul li{list-style: none; position: relative;}
 .widget:after{
