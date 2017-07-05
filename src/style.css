@@ -1396,7 +1396,7 @@ address {font-style: italic;}
  
 .px-counter .px-holder article:last-child a {float: right;}
  
-.px-counter .px-holder article .px-readmore {background: #a0a0a0;}
+.px-counter .px-holder article .px-readmore {background: #a0a0a0; float: right;}
  
 .px-counter .px-holder article span {color: #fff;}
  
@@ -4878,7 +4878,7 @@ width: 100%; {}
     margin-bottom: 15px;
     margin-right: 20px;
     text-align: center;
-    width: 105px;
+    width: 85px;
  }
  
 .ticket-info {padding: 0 3px;}
@@ -4890,7 +4890,7 @@ width: 100%; {}
         font-size: 12px;
         font-weight: 500;
         letter-spacing: 0;
-        margin: 0 0 30px;
+        margin: 0 0 25px;
         padding: 5px 0 3px;
      }
  
@@ -4898,6 +4898,7 @@ width: 100%; {}
         color: #999999;
         font-size: 40px;
         font-weight: 500;
+        margin: 15px;
      }
  
     .ticket-info span {
@@ -4932,9 +4933,7 @@ width: 100%; {}
  
 .event-detail .contect-infoarea {margin-bottom: 28px;}
  
-.event-detail .px-tabs.simple .tab-content #home,
-.event-detail .px-tabs.simple .tab-content #fundraiser {padding: 35px 28px 35px 30px;}
-.event-detail .px-tabs.simple .tab-content #profile {padding: 20px;}
+.event-detail .px-tabs.simple .tab-content .tab-pane {padding: 35px 28px 35px 30px;}
  
 .event-detail .px-tabs.simple .tab-content strong {
     margin: 0 0 14px;
@@ -4946,8 +4945,6 @@ width: 100%; {}
 .event-detail  .px-tabs.simple .tab-content {padding: 0;}
  
     .event-detail  .px-tabs.simple .tab-content #messages {padding: 30px 25px;}
- 
-.event-detail .px-tabs.simple {margin: 0 0 5px;}
  
 .event-detail .px-section-title h3 {
     font-size: 30px;
