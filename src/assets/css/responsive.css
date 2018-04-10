@@ -1,3 +1,7 @@
+#main {
+	min-height: 70rem
+}
+
 /* 1170px to 980px or 768px */
 @media screen and (max-width: 1099px) {
 .banner-holder ul{
