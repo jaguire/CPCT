@@ -1,47 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{site.description}}">
+    <meta name="keywords" content="{{site.keywords}}">
     <meta property="og:url" content="http://centerplacechristiantheatre.com">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{site.name}} ({{site.shortName}})">
     <meta property="og:image" content="http://centerplacechristiantheatre.com/assets/images/logo-facebook.png">
     <meta property="og:description" content="{{site.description}}">
-    <meta name="description" content="{{site.description}}">
-    <meta name="keywords" content="{{site.keywords}}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{page.title}} - {{site.shortName}}</title>
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/iconmoon.css">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/assets/css/menu.css">
-    <link rel="stylesheet" href="/assets/css/color.css">
-    <link rel="stylesheet" href="/assets/css/widget.css">
-    <link rel="stylesheet" href="/assets/css/browser-detect.css">
-    <link rel="stylesheet" href="/assets/css/responsive.css">
-    <script src="/assets/scripts/modernizr.min.js"></script>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Contrail+One|Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/material.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="/js/material.min.js"></script>
+    <script src="/js/main.js"></script>
 </head>
 <body>
-    <div class="wrapper"> 
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         {% include header.html %}
-        {{content}}
+        <main class="mdl-layout__content">
+            <div class="mdl-grid content-max-width">
+                {{content}}
+            </div>
+        </main>
         {% include footer.html %}
     </div>
-    <script src="/assets/scripts/jquery.min.js"></script> 
-    <script src="/assets/scripts/jquery.flexslider.js"></script> 
-    <script src="/assets/scripts/jquery.countdown.js"></script> 
-    <script src="/assets/scripts/bootstrap.min.js"></script> 
-    <script src="/assets/scripts/browser-detect.js"></script> 
-    <script src="/assets/scripts/menu.js"></script>
-    <script src="/assets/scripts/slick.min.js"></script>
-    <script src="/assets/scripts/counter.js"></script> 
-    <script src="/assets/scripts/functions.js"></script>
 </body>
 </html>

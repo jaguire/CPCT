@@ -3,181 +3,36 @@ layout: layout
 title: Contact
 ---
 
-{% include breadcrumb.html %}
-<div id="main">
-      <section>
-        <div class="container">
-            <div class="row">
-                <!--<section class="px-services simple">
-                    <article class="col-md-3">
-                        <figure>
-                            <i class="icon-shop"></i>
-                        </figure>
-                        <div class="text">
-                            <h5>Online Store</h5>
-                            <p>ImagineDragonsMusic.com and The Imagine Dragons Online Store are managed by MasterChannel. Visit our Knowledge base and Frequently Asked Questions</p>    
-                        </div>
-                    </article>
-                    <article class="col-md-3">
-                        <figure>
-                            <i class="icon-paperplane2"></i>
-                        </figure>
-                        <div class="text">
-                            <h5>Updates newsletter</h5>
-                            <p>The band enjoys receiving mail for general contact purposes or from specific fans, but considering their heavy touring schedule, please give them time to read</p>    
-                        </div>
-                    </article>
-                    <article class="col-md-3">
-                        <figure>
-                            <i class="icon-diamond2"></i>
-                        </figure>
-                        <div class="text">
-                            <h5>Autographs</h5>
-                            <p>Just isn't enough time and resources to accommodate the many, many requests that come in. But if you catch the guys at a show, they will gladly give you an autograph.</p>    
-                        </div>
-                    </article>
-                    <article class="col-md-3">
-                        <figure>
-                            <i class="icon-params"></i>
-                        </figure>
-                        <div class="text">
-                            <h5>Licensing songs or Videos</h5>
-                            <p>If you are looking to license a song for a video, you can contact the label and publisher at the following addresses to make an inquiry: Kerry Hickey</p>    
-                        </div>
-                    </article>
-                </section>-->
-                <section class="contect-infoarea">
-                    <div class="col-md-6">
-                        <div class="px-contact-info">
-                            <ul>
-                                <li>
-                                    <i class="icon-facebook2"></i>
-                                    <p>
-                                        <span>Facebook</span>
-                                        <a href="https://www.facebook.com/pg/Center-Place-Christian-Theatre-544487852400441" target="_blank">{{site.name}}</a>
-                                    </p>
-                                </li>
-                                <li>
-                                    <i class="icon-mail6"></i>
-                                    <p>
-                                        <span>Email Address</span>
-                                        <a href="mailto:{{site.email}}">{{site.email}}</a>
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="px-contact-info">
-                            <ul>
-                                <!--<li>
-                                    <i class="icon-phone8"></i>
-                                    <p>
-                                        <span>Phone</span>
-                                        <a href="tel:{{site.phone}}">{{site.phone}}</a>
-                                    </p>
-                                </li>-->
-                                <li>
-                                    <i class="icon-mail6"></i>
-                                    <p>
-                                        <span>Mailing Address</span>
-                                        {{site.address1}}<br>
-                                        {{site.address2}}
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--<div class="col-md-8">
-                        <div class="px-map-sec">
-                            <div class="px-section-title">
-                                <h3>Locate Us</h3>
-                            </div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11695.800353345865!2d-94.3639926863936!3d39.06507770474236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c11cd7cedf23b1%3A0xb184279c6c1c8b26!2s2921+Tepee+Ave%2C+Independence%2C+MO+64057!5e0!3m2!1sen!2sus!4v1494302629223" width="100%" height="370" frameborder="0" style="border:0"></iframe>
-                        </div>
-                    </div>-->
-                </section>
-            </div>
+<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+    <div class="mdl-card__title mdl-card--image theatre">
+        <h1 class="mdl-card__title-text">Contact Information</h1>
+    </div>
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text">
+
+            <a href="https://www.facebook.com/pg/Center-Place-Christian-Theatre-544487852400441" target="_blank">
+                <span class="mdl-chip mdl-chip--contact">
+                    <img class="mdl-chip__contact" src="/images/facebook.png"></img>
+                    <span class="mdl-chip__text">Facebook</span>
+                </span>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+
+            <a href="mailto:{{site.email}}">
+                <span class="mdl-chip mdl-chip--contact">
+                    <img class="mdl-chip__contact" src="/images/email.png"></img>
+                    <span class="mdl-chip__text">{{site.email}}</span>
+                </span>
+            </a>
+            &nbsp;&nbsp;&nbsp;
+        
+            <span class="mdl-chip mdl-chip--contact">
+                <img class="mdl-chip__contact" src="/images/home.png"></img>
+                <span class="mdl-chip__text">{{site.address1}}, {{site.address2}}</span>
+            </span>
+
+            <!-- <p>Phone: <a href="tel:{{site.phone}}">{{site.phone}}</a></p> -->
+
         </div>
-    </section>
-    <section class="bg-form">
-        <div class="container">
-            <div class="row">
-                <section class="px-form plain">
-                    <div class="col-md-12">
-                        <div class="px-fancy-heading align-center">
-                            <div class="px-spreater2">
-                                <div class="divider">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </div>
-                            <h2>Feel Free to contact Us</h2>
-                            <!--<p>Arrives with a serious reputation attached. The Irish/Scottish five piece have sold over.</p>-->
-                        </div>
-                        <div id="contact-form">
-                            <label>
-                                <i class="icon-user9"></i>
-                                <input id="name" type="text" required="" value="your name" onblur="if(this.value == '') { this.value = 'your name'; }" onfocus="if(this.value == 'your name') { this.value = ''; }">
-                            </label>
-                            <label>
-                                <i class="icon-mail6"></i>
-                                <input id="email" type="email" required="" value="Email Address" onblur="if(this.value == '') { this.value = 'Email Address'; }" onfocus="if(this.value == 'Email Address') { this.value = ''; }">
-                            </label>
-                            <label>
-                                <i class="icon-phone8"></i>
-                                <input id="phone" type="text" required="" value="Phone" onblur="if(this.value == '') { this.value = 'Phone'; }" onfocus="if(this.value == 'Phone') { this.value = ''; }">
-                            </label>
-                            <label>
-                                <i class="icon-text"></i>
-                                <input id="subject" type="text" required="" value="Subject" onblur="if(this.value == '') { this.value = 'Subject'; }" onfocus="if(this.value == 'Subject') { this.value = ''; }">
-                            </label>
-                            <label class="textaera-sec">
-                                <i class="icon-text"></i>
-                                <textarea id="message" placeholder="Message"></textarea>
-                            </label>
-                            <label class="submit-sec">
-                                <input id="gotcha" type="text" style="display:none">
-                                <input type="button" onclick="sendContactEmail()" value="Submit Massage">
-                            </label>
-                        </div>
-                        <div id="thank-you" class="align-center" style="display:none;">
-                            <p>Your message has been sent. Thank you for contacting us.</p>
-                        </div>
-                        <script>
-                            function sendContactEmail() {
-                                const postData = {
-                                    name: $('#name').val(),
-                                    phone: $('#phone').val(),
-                                    message: $('#message').val(),
-                                    _replyto: $('#email').val(),
-                                    _subject: $('#subject').val(),
-                                    _gotcha: $('#gotcha').val()
-                                };
-                                const settings = {
-                                    method: 'POST',
-                                    url: 'https://formspree.io/info@centerplacechristiantheatre.com', 
-                                    data: postData,
-                                    dataType: 'json'
-                                };
-                                $.ajax(settings)
-                                    .fail(function() {
-                                        $('#thank-you p').text('There was an error sending your message. Please try again later.');
-                                    })
-                                    .always(function() {
-                                        $('#contact-form').hide();
-                                        $('#thank-you').show();
-                                    });
-                            }
-                        </script>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </section>
+    </div>
 </div>
