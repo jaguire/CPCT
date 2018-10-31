@@ -4,8 +4,8 @@
     "Watch": "./temp/watch",
     //"AdditionalStaticFiles": []
     //"ScssOutputStyle": "Nested",
-    //"MinifyHtml": false,
     //"MinifyCss": false,
     //"MinifyJs": false,
+    "MinifyHtml": true
     //"Verbose": true
 }
