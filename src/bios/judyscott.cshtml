@@ -2,6 +2,20 @@
     Layout = "_layout.cshtml";
     ViewBag.Title = "Judy Scott";
 }
+
+@helper RecentExperience(string title, string subtitle, string year) {
+    <li class="mdl-list__item mdl-list__item--two-line">
+        <span class="mdl-list__item-primary-content">
+            <i class="material-icons mdl-list__item-icon">local_activity</i>
+            <span>@title</span>
+            <span class="mdl-list__item-sub-title">with @subtitle</span>
+        </span>
+        <span class="mdl-list__item-secondary-content">
+            <span class="mdl-list__item-secondary-info">@year</span>
+        </span>
+    </li>
+}
+
 <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
     <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--4-col">
@@ -34,16 +48,7 @@
 
             <!-- <h2 class="mdl-typography--headline">Recent Experience</h2>
             <ul class="mdl-list">
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>Mary Poppins</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Christian Theater</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">Summer 2017</span>
-                    </span>
-                </li>
+                @RecentExperience("TITLE", "SUBTITLE", "YEAR")
             </ul> -->
 
         </div>

@@ -2,6 +2,20 @@
     Layout = "_layout.cshtml";
     ViewBag.Title = "Joy Cain";
 }
+
+@helper RecentExperience(string title, string subtitle, string year) {
+    <li class="mdl-list__item mdl-list__item--two-line">
+        <span class="mdl-list__item-primary-content">
+            <i class="material-icons mdl-list__item-icon">local_activity</i>
+            <span>@title</span>
+            <span class="mdl-list__item-sub-title">with @subtitle</span>
+        </span>
+        <span class="mdl-list__item-secondary-content">
+            <span class="mdl-list__item-secondary-info">@year</span>
+        </span>
+    </li>
+}
+
 <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
     <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--4-col">
@@ -58,168 +72,23 @@
             </p>
 
             <h2 class="mdl-typography--headline">Recent Experience</h2>
-
             <ul class="mdl-list">
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>Mary Poppins</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Christian Theater</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">Summer 2017</span>
-                    </span>
-                </li>
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>Little Women</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Christian Theater</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">Summer 2015</span>
-                    </span>
-                </li>
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>OKLAHOMA!</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Christian Theater</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">Summer 2012</span>
-                    </span>
-                </li>
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>Fiddler on the Roof</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Christian Theater</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">Summer 2009</span>
-                    </span>
-                </li>
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>Seven Brides for Seven Brothers</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Christian Theater</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">Summer 2008</span>
-                    </span>
-                </li>
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>Disney's Peter Pan, Jr</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Restoration School</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">2015</span>
-                    </span>
-                </li>
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>Disney's The Little Mermaid, Jr</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Restoration School</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">2014</span>
-                    </span>
-                </li>
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>Annie</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Restoration School</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">2013</span>
-                    </span>
-                </li>
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>Cinderella</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Restoration School</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">2012</span>
-                    </span>
-                </li>
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>Meet Me in St. Louis</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Restoration School</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">2011</span>
-                    </span>
-                </li>
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>The King &amp; I</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Restoration School</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">2010</span>
-                    </span>
-                </li>
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>The Sound of Music</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Restoration School</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">2009</span>
-                    </span>
-                </li>
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>The Music Man</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Restoration School</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">2008</span>
-                    </span>
-                </li>
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>Disney's Beauty &amp; the Beast</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Restoration School</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">2007</span>
-                    </span>
-                </li>
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>Annie</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Restoration School</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">2006</span>
-                    </span>
-                </li>
-                <li class="mdl-list__item mdl-list__item--two-line">
-                    <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">local_activity</i>
-                        <span>Fish Tales</span>
-                        <span class="mdl-list__item-sub-title">with Center Place Restoration School</span>
-                    </span>
-                    <span class="mdl-list__item-secondary-content">
-                        <span class="mdl-list__item-secondary-info">2005</span>
-                    </span>
-                </li>
+                @RecentExperience("Mary Poppins", "Center Place Christian Theater", "Summer 2017")
+                @RecentExperience("Little Women", "Center Place Christian Theater", "Summer 2015")
+                @RecentExperience("OKLAHOMA!", "Center Place Christian Theater", "Summer 2012")
+                @RecentExperience("Fiddler on the Roof", "Center Place Christian Theater", "Summer 2009")
+                @RecentExperience("Seven Brides for Seven Brothers", "Center Place Christian Theater", "Summer 2008")
+                @RecentExperience("Disney's Peter Pan, Jr", "Center Place Restoration School", "2015")
+                @RecentExperience("Disney's The Little Mermaid, Jr", "Center Place Restoration School", "2014")
+                @RecentExperience("Annie", "Center Place Restoration School", "2013")
+                @RecentExperience("Cinderella", "Center Place Restoration School", "2012")
+                @RecentExperience("Meet Me in St. Louis", "Center Place Restoration School", "2011")
+                @RecentExperience("The King &amp; I", "Center Place Restoration School", "2010")
+                @RecentExperience("The Sound of Music", "Center Place Restoration School", "2009")
+                @RecentExperience("The Music Man", "Center Place Restoration School", "2008")
+                @RecentExperience("Disney's Beauty &amp; the Beast", "Center Place Restoration School", "2007")
+                @RecentExperience("Annie", "Center Place Restoration School", "2006")
+                @RecentExperience("Fish Tales", "Center Place Restoration School", "2005")
             </ul>
 
         </div>
