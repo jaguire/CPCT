@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{site.description}}">
-    <meta name="keywords" content="{{site.keywords}}">
+    <meta name="description" content="@ViewBag.Description">
+    <meta name="keywords" content="@ViewBag.Keywords">
     <meta property="og:url" content="http://centerplacechristiantheatre.com">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{site.name}} ({{site.shortName}})">
+    <meta property="og:title" content="@ViewBag.Title | @ViewBag.ShortName">
     <meta property="og:image" content="http://centerplacechristiantheatre.com/assets/images/logo-facebook.png">
-    <meta property="og:description" content="{{site.description}}">
-    <title>{{page.title}} - {{site.shortName}}</title>
+    <meta property="og:description" content="@ViewBag.Description">
+    <title>@ViewBag.Title | @ViewBag.ShortName</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Contrail+One|Montserrat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/css/material.min.css">
@@ -21,13 +21,17 @@
 </head>
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-        {% include header.html %}
+
+        @Include("partials/_header")
+
         <main class="mdl-layout__content">
             <div class="mdl-grid content-max-width">
-                {{content}}
+                @RenderBody()
             </div>
         </main>
-        {% include footer.html %}
+
+        @Include("partials/_footer")
+
     </div>
 </body>
 </html>

@@ -1,8 +1,7 @@
----
-layout: layout
-title: Contact
----
-
+@{
+    Layout = "_layout.cshtml";
+    ViewBag.Title = "Contact";
+}
 <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
     <div class="mdl-card__title mdl-card--image theatre">
         <h1 class="mdl-card__title-text">Contact Information</h1>
@@ -21,7 +20,7 @@ title: Contact
             <a href="mailto:{{site.email}}">
                 <span class="mdl-chip mdl-chip--contact">
                     <i class="mdl-chip__contact material-icons" style="background-color: orange">email</i>
-                    <span class="mdl-chip__text">{{site.email}}</span>
+                    <span class="mdl-chip__text">@ViewBag.Email</span>
                 </span>
             </a>
             &nbsp;&nbsp;&nbsp;

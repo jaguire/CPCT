@@ -1,9 +1,7 @@
----
-layout: layout
-title: Mary Poppins
----
-
-{% include breadcrumb.html %}
+@{
+    Layout = "_layout.cshtml";
+    ViewBag.Title = "Mary Poppins";
+}
 <!-- Main Start -->
 <div id="main">
     <div class="container">
@@ -21,7 +19,7 @@ title: Mary Poppins
                                     <ul>
                                         <li><a class="music-mixer">Live Performance</a></li>
                                     </ul>
-                                    <h4>{{page.title}}</h4>
+                                    <h4>@ViewBag.Title</h4>
                                 </div>
                                 <div class="function-time">
                                     <div>Friday, August 11th</div>

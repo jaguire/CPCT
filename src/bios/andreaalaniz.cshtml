@@ -1,13 +1,12 @@
----
-layout: layout
-title: Andrea Alaniz
----
-
+@{
+    Layout = "_layout.cshtml";
+    ViewBag.Title = "Andrea Alaniz";
+}
 <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
     <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--4-col">
-            <p><img src="andreaalaniz.jpg" alt="{{page.title}}"></p>
-            <h1 class="mdl-card__title-text">{{page.title}}</h1>
+            <p><img src="andreaalaniz.jpg" alt="@ViewBag.Title"></p>
+            <h1 class="mdl-card__title-text">@ViewBag.Title</h1>
             <p>Board Member</p>
         </div>
         <div class="mdl-cell mdl-cell--8-col">

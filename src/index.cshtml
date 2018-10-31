@@ -1,8 +1,7 @@
----
-layout: layout
-title: Center Place Christian Theatre
----
-
+@{
+    Layout = "_layout.cshtml";
+    ViewBag.Title = ViewBag.Name;
+}
 <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
     <div class="mdl-card__media">
         <a href="/events/lestweforget2018/Poster.pdf" target="_blank">
@@ -29,7 +28,7 @@ title: Center Place Christian Theatre
                 temporarily forgotten.</p>
         </div>
         <div class="mdl-cell mdl-cell--6-col mdl-cell--hide-tablet mdl-cell--hide-phone">
-            <img src="/images/logo-big.png" alt="{{site.name}}" style="width:100%;">
+            <img src="/images/logo-big.png" alt="@ViewBag.Name" style="width:100%;">
         </div>
     </div>
     <div class="mdl-card__actions mdl-card--border">

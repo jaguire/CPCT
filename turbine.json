@@ -1,0 +1,11 @@
+﻿{
+    "Input": "./src",
+    "Output": "./docs",
+    "Watch": "./temp/watch",
+    //"AdditionalStaticFiles": []
+    //"ScssOutputStyle": "Nested",
+    //"MinifyHtml": false,
+    //"MinifyCss": false,
+    //"MinifyJs": false,
+    //"Verbose": true
+}
