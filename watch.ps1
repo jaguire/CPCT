@@ -1,2 +1,2 @@
 $ErrorActionPreference = "Stop"
-.\tools\turbine\turbine.exe -watch
+.\tools\turbine\turbine.exe --watch

@@ -1,0 +1,9 @@
+﻿Input: "./src"
+Output: "./docs"
+# ScssOutput: compressed # nested, compact, expanded, compressed
+# MinifyHtml: true
+# MinifyCss: true
+# MinifyJs: true
+# Verbose: true
+# AdditionalStaticFiles:
+# - dat
