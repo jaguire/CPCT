@@ -56,3 +56,27 @@ a {
 .mdl-card--image.theatre {
   background: url(/images/title-theatre.jpg) center/cover;
 }
+
+.mdl-card--image.screening {
+  background: url(/images/title-screening.jpg) center/cover;
+}
+
+.mdl-card--image.mask {
+  background: url(/images/title-mask.jpg) center/cover;
+}
+
+.mdl-card--image.clean {
+  background: url(/images/title-clean.jpg) center/cover;
+}
+
+.mdl-card--image.tracing {
+  background: url(/images/title-tracing.jpg) center/cover;
+}
+
+.mdl-card--image.distancing {
+  background: url(/images/title-distancing.jpg) center/cover;
+}
+
+.mdl-card--image.rope {
+  background: url(/images/title-rope.jpg) center/cover;
+}
